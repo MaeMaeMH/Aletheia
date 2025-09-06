@@ -28,10 +28,12 @@ This project automatically sends push notifications to your phone whenever a **C
     ```bash
     git clone https://github.com/MaeMaeMH/cs2_update_alert.git
     cd cs2_update_alert
+
 2. Create a `.env` file with your Pushover credentials:
     ```env
     PUSHOVER_USER_KEY=your_user_key
     API_TOKEN=your_api_token
+
 3. Ensure you have a `game_params.py` file defining your monitored games:
     ```python
     CS2_PARAMS = {
@@ -40,9 +42,11 @@ This project automatically sends push notifications to your phone whenever a **C
     "tags": "patchnotes",       # Simple Filter
     "name": "Counter-Strike 2"  # Only used for sending Pushover messages
     }
+
 4. Install dependencies:
     ```bash
     pip install -r requirements.txt
+    
 5. Rune the script:
     ```bash
     python main.py
