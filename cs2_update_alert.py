@@ -40,8 +40,9 @@ def main():
     # Collect all game parameters from game_params module
     games = {name: getattr(game_params, name) for name in dir(game_params) if name.endswith("_PARAMS")}
 
-    for game_name, params in games.items():
-        # Path to the state file that stores last notified news IDs
+    for game_var, params in games.items():
+        
+        game_name = params.get("name", game_var) # Cleaner game name for display
         state_file = os.path.join(STATE_DIR, f"{game_name}_last_update.txt")
         
         # Load previously notified news IDs or initialize an empty list
