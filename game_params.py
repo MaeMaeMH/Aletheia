@@ -1,5 +1,6 @@
 CS2_PARAMS = {
-    "app_id": 730,
+    "appid": 730,
     "count": 5,
-    "tags": "patchnotes"
+    "tags": "patchnotes",
+    "name": "Counter-Strike 2"
 }
