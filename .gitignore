@@ -1,3 +1,4 @@
 .env
 __pycache__
 state_files
+logs
